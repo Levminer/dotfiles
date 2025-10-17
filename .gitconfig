@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Lőrik Levente
+	email = levminer@levminer.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDg2djYpmrkWP3Kgprr2GL6bHVa4dPFAGy4MIr4xRhaW levminer@levminer.com
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
